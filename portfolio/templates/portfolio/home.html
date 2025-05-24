@@ -1,0 +1,93 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="about" class="about-frame fade-in">
+    <div class="about-container glassy-box">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I'm a second-year CSE student with a passion for crafting interactive web experiences.
+                I specialize in full-stack development with Python and Django, and I love transforming
+                creative ideas into real-world applications.
+            </p>
+            <p>
+                I'm focused, curious, and always eager to learn and adapt to new challenges in the tech space.
+            </p>
+        </div>
+        <div class="about-image profile-animated">
+            <img src="{% static 'portfolio/image/my profile.jpg' %}" alt="My Profile" class="profile-frame">
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="project-section">
+  <div class="project-glass-frame"></div>
+  <h2 class="section-title">Projects</h2>
+    <div class="project-card">
+        <!-- Project 1 -->
+        <div class="card project-card glow-trigger" data-modal="modal1">
+            <h3>🌐 Portfolio Website</h3>
+            <p>Responsive Django-based personal website with animations and modern UI.</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="card project-card glow-trigger" data-modal="modal2">
+            <h3>☁️ Weather App</h3>
+            <p>Live weather info using OpenWeather API, built with Django + JS.</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="card project-card glow-trigger" data-modal="modal3">
+            <h3>📋 Task Manager</h3>
+            <p>To-do app with login system, database storage, and progress tracking.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="skills" class="skills-section fade-in">
+  <div class="skills-glass-frame"></div>
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h4>Languages</h4>
+      <ul class="skill-list">
+        <li class="skill-item">Python</li>
+        <li class="skill-item">C/C++</li>
+        <li class="skill-item">Java</li>
+        <li class="skill-item">SQL</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h4>Web</h4>
+      <ul class="skill-list">
+        <li class="skill-item">HTML5 / CSS3</li>
+        <li class="skill-item">Django</li>
+        <li class="skill-item">JavaScript (Basic)</li>
+        <li class="skill-item">REST APIs</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h4>Tools</h4>
+      <ul class="skill-list">
+        <li class="skill-item">Git & GitHub</li>
+        <li class="skill-item">VS Code</li>
+        <li class="skill-item">Figma</li>
+        <li class="skill-item">Linux</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact-frame fade-in">
+   <div class="contact-glass-frame"></div>
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> yuvaravanan@gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/yuvathaarani">github.com/yuvathaarani</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yuvathaarani-ravanan-376b01313">linkedin.com/in/yuvathaarani</a></p>
+</section>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yuvathaarani | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particle-background">
+  <span class="particle" style="--i:11;"></span>
+  <span class="particle" style="--i:12;"></span>
+  <span class="particle" style="--i:13;"></span>
+  <span class="particle" style="--i:14;"></span>
+  <span class="particle" style="--i:15;"></span>
+  <span class="particle" style="--i:16;"></span>
+  <span class="particle" style="--i:17;"></span>
+  <span class="particle" style="--i:18;"></span>
+  <span class="particle" style="--i:19;"></span>
+  <span class="particle" style="--i:20;"></span>
+</div>
+    <div class="particle-bg"></div>
+    <div class="animated-network"></div>
+
+    <header class="hero">
+    <nav class="fixed-nav">
+        <h1 class="logo">Yuvathaarani Ravanan</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro-text enhanced-hero">
+        <h2 class="hero-heading">Hi, I'm <span class="highlight">Yuvathaarani</span></h2>
+        <p class="hero-subheading">Aspiring Python Developer | Web Developer | Tech Enthusiast</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn pulse">✨ Let's Connect</a>
+            <a href="{% static 'portfolio/files/Yuvathaarani_Resume.pdf' %}" class="btn glass-btn" download>
+                📄 Download Resume
+            </a>
+        </div>
+    </div>
+
+   <div class="wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z" fill="#ffffff"></path>
+    </svg>
+</div>
+
+</header> 
+
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>&copy; 2025 Yuvathaarani. Designed with passion 💙</p>
+    </footer>
+
+</body>
+</html>
