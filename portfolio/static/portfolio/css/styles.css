@@ -683,8 +683,8 @@ body {
 /* ===== Wave Divider Styling ===== */
 .wave-divider svg {
   display: block;
-  width: 1100%;
-  height: 1100px;
+  width: 100%;
+  height: 100px;
   margin-bottom: -10px;
 }
 
