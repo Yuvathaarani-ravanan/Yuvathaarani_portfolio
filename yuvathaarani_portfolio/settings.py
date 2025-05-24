@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-nuk381nqgf#fvj^d4flp8@$*%b5c-+s*9ms%64wy5b-8_bf)38
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yuvathaarani_portfolio.onrender.com']
+
 
 
 # Application definition
@@ -115,7 +116,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -126,3 +127,11 @@ import os
 TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'portfolio/templates')]
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolio/static')]
+import os
+import dj_database_url
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
